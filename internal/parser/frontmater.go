@@ -8,9 +8,9 @@ import (
 
 type Frontmatter struct {
 	Title       string
-	Date        string
-	Tags        []string
 	Description string
+	Date        string
+	// Tags        []string
 }
 
 func ParseFrontmatter(content []byte) (*Frontmatter, []byte, error) {
